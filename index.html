@@ -11,27 +11,49 @@
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
     <title>Hello, world!</title>
+    <style>
+        body {
+            background-color: aqua;
+        }
+
+        @media screen and (min-width:576px) {
+
+            /* 576px and up */
+            body {
+                background-color: red;
+            }
+        }
+
+        @media screen and (min-width:768px) {
+
+            /* 768px and up */
+            body {
+                background-color: blue;
+            }
+        }
+
+        @media screen and (min-width:992px) {
+
+            /* 992px and up */
+            body {
+                background-color: green;
+            }
+        }
+
+        @media screen and (min-width:1200px) {
+
+            /* 1200px and up */
+            body {
+                background-color: yellow;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <div class="container bg-danger">
-        hey I'm simple container
+    <div class="container bg-secondary text-white">
+        simple container
     </div>
-    <div class="container-fluid bg-primary">
-        hey I'm simple container-fluid
-    </div>
-
-
-    <section id="skills" class="bg-warning p-5">
-        <div class="container">
-            <h1>hey I'm skill section</h1>
-        </div>
-    </section>
-    <section id="about" class="bg-danger p-5">
-        <div class="container-fluid">
-            <h1>hey I'm about section</h1>
-        </div>
-    </section>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
