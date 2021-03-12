@@ -12,9 +12,40 @@
 
     <title>Hello, world!</title>
     <style>
-        .row {
-            min-height: 100vh;
-            background: #f15025;
+        body {
+            background-color: aqua;
+        }
+
+        @media screen and (min-width:576px) {
+
+            /* 576px and up    */
+            body {
+                background-color: red;
+            }
+        }
+
+        @media screen and (min-width:768px) {
+
+            /* 768px and up    */
+            body {
+                background-color: blue;
+            }
+        }
+
+        @media screen and (min-width:992px) {
+
+            /* 992px and up    */
+            body {
+                background-color: green;
+            }
+        }
+
+        @media screen and (min-width:1200px) {
+
+            /* 1200px and up    */
+            body {
+                background-color: yellow;
+            }
         }
     </style>
 </head>
@@ -22,6 +53,7 @@
 
 <body>
     <!-- responsive breakpoints -->
+    <div class="container bg-secondary text-white">Simple container</div>
 
 
     <!-- Optional JavaScript; choose one of the two! -->
